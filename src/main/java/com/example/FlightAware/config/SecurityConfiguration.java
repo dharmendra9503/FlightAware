@@ -1,4 +1,4 @@
-package com.example.FlightAware.Config;
+package com.example.FlightAware.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
