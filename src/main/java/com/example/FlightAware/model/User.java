@@ -6,13 +6,11 @@ import jakarta.persistence.*;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "UID")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String Name;
+    private String name;
     private String emailId;
-    private String Pass;
-    private long Mobile;
+    private String pass;
 
     public long getId() {
         return id;
@@ -23,11 +21,11 @@ public class User {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getEmailId() {
@@ -39,18 +37,10 @@ public class User {
     }
 
     public String getPass() {
-        return Pass;
+        return pass;
     }
 
     public void setPass(String pass) {
-        Pass = pass;
-    }
-
-    public long getMobile() {
-        return Mobile;
-    }
-
-    public void setMobile(long mobile) {
-        Mobile = mobile;
+        this.pass = pass;
     }
 }
