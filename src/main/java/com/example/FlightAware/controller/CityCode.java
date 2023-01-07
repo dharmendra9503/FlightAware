@@ -6,15 +6,17 @@ public class CityCode {
     public String codes(String city){
         String code;
         HashMap<String, String> cityCode = new HashMap<String, String>();
-        cityCode.put("mumbai","BOM-sky");
-        cityCode.put("india","IN-sky");
-        cityCode.put("bengaluru","BLR-sky");
-        cityCode.put("hyderabad","HYD-sky");
-        cityCode.put("chennai","MAA-sky");
-        cityCode.put("kolkata","CCU-sky");
-        cityCode.put("ahmedabad","AMD-sky");
-        cityCode.put("kochi","COK-sky");
-        cityCode.put("pune","PNQ-sky");
+        cityCode.put("munich","MUC");
+        cityCode.put("berlin","BER");
+        cityCode.put("mumbai","BOM");
+        cityCode.put("india","IN");
+        cityCode.put("bengaluru","BLR");
+        cityCode.put("hyderabad","HYD");
+        cityCode.put("chennai","MAA");
+        cityCode.put("kolkata","CCU");
+        cityCode.put("ahmedabad","AMD");
+        cityCode.put("kochi","COK");
+        cityCode.put("pune","PNQ");
         cityCode.put("fort wayne","FWA-sky");
         cityCode.put("united states","US-sky");
         cityCode.put("concord regional","USA-sky");

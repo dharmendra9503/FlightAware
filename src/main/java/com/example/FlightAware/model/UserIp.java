@@ -12,15 +12,13 @@ public class UserIp {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    private String cnt;
-    private String Country;
-    private String Locale;
-    private String Origin;
-    private String Dest;
-    private String Currency;
-    private String inDate;
-    private String outDate;
-    private String Curr;
+    private Integer personCnt;
+    private String country;
+    private String origin;
+    private String dest;
+    private String currency;
+    private String departDate;
+    private String returnDate;
 
     public long getId() {
         return id;
@@ -30,75 +28,59 @@ public class UserIp {
         this.id = id;
     }
 
-    public String getCnt() {
-        return cnt;
+    public Integer getPersonCnt() {
+        return personCnt;
     }
 
-    public void setCnt(String cnt) {
-        this.cnt = cnt;
+    public void setPersonCnt(Integer personCnt) {
+        this.personCnt = personCnt;
     }
 
     public String getCountry() {
-        return Country;
+        return country;
     }
 
     public void setCountry(String country) {
-        Country = country;
-    }
-
-    public String getLocale() {
-        return Locale;
-    }
-
-    public void setLocale(String locale) {
-        Locale = locale;
+        this.country = country;
     }
 
     public String getOrigin() {
-        return Origin;
+        return origin;
     }
 
     public void setOrigin(String origin) {
-        Origin = origin;
+        this.origin = origin;
     }
 
     public String getDest() {
-        return Dest;
+        return dest;
     }
 
     public void setDest(String dest) {
-        Dest = dest;
+        this.dest = dest;
     }
 
     public String getCurrency() {
-        return Currency;
+        return currency;
     }
 
     public void setCurrency(String currency) {
-        Currency = currency;
+        this.currency = currency;
     }
 
-    public String getInDate() {
-        return inDate;
+    public String getDepartDate() {
+        return departDate;
     }
 
-    public void setInDate(String inDate) {
-        this.inDate = inDate;
+    public void setDepartDate(String departDate) {
+        this.departDate = departDate;
     }
 
-    public String getOutDate() {
-        return outDate;
+    public String getReturnDate() {
+        return returnDate;
     }
 
-    public void setOutDate(String outDate) {
-        this.outDate = outDate;
-    }
-
-    public String getCurr() {
-        return Curr;
-    }
-
-    public void setCurr(String curr) {
-        Curr = curr;
+    public void setReturnDate(String returnDate) {
+        this.returnDate = returnDate;
     }
 }
